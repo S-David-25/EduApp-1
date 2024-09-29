@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>EduApp - Unlock Learning, Anytime, Anywhere</title>
+    <link rel="icon" href="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="robots" content="none,noarchive"/>
+</head>
+
+<body>
+    <div id="sectionLogin" class="d-flex flex-column justify-content-between home-bg">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#home" onclick="display('sectionLogin')">
+                    <img class="nav-edu-logo" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />EduApp
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="#home" onclick="display('sectionLogin')">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#courses" onclick="showLoginMessage()">Courses</a>
+                        <a class="nav-link" href="#doubts" onclick="showLoginMessage()">Doubts</a>
+                        <a class="nav-link" href="#sectionLogin" onclick="display('sectionLogin')">Log In</a>
+                        <a class="nav-link" href="#sectionSignup" onclick="display('sectionSignup')">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-7 text-center">
+                    <img class="eduapp-logo-login mb-3" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 d-flex flex-row justify-content-center">
+                    <div class="login-container text-center">
+                        <h2 class="text-center login-head">Log In</h2>
+                        <div>
+                            <input class="username-box txt" type="text" placeholder="Email or Username"><br />
+                            <input class="username-box txt" type="password" placeholder="Password"><br />
+                            <button class="btn btn-success btn-colour txt mt-2 mb-3" onclick="display('sectionHome')">Log In</button>
+                            <p class="txt-doubts">Don't have an account? <a href="#" onclick="display('sectionSignup')">Sign Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section text-white text-center bg-dark">
+            <p class="txt">&copy; 2024 EduApp. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div id="sectionSignup" class="d-flex flex-column justify-content-between home-bg">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#home" onclick="display('sectionSignup')">
+                    <img class="nav-edu-logo" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />EduApp
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="#home" onclick="display('sectionSignup')">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#courses" onclick="showSignupMessage()">Courses</a>
+                        <a class="nav-link" href="#doubts" onclick="showSignupMessage()">Doubts</a>
+                        <a class="nav-link" href="#sectionLogin" onclick="display('sectionLogin')">Log In</a>
+                        <a class="nav-link" href="#sectionSignup" onclick="display('sectionSignup')">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-7 text-center">
+                    <img class="eduapp-logo-login mb-3" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 d-flex flex-row justify-content-center">
+                    <div class="login-container text-center">
+                        <h2 class="text-center login-head">Sign Up</h2>
+                        <div>
+                            <input class="username-box txt" type="text" placeholder="Fullname" /><br />
+                            <input class="username-box txt" type="text" placeholder="Email" /><br />
+                            <input class="username-box txt" type="password" placeholder="Password" /><br />
+                            <button class="btn btn-success btn-colour txt mt-2 mb-3" onclick="display('sectionHome')">Sign Up</button>
+                            <p class="txt-doubts">Already have an account? <a href="#" onclick="display('sectionLogin')">Log In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section text-white text-center bg-dark">
+            <p class="txt">&copy; 2024 EduApp. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div id="sectionHome" class="background-colour">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#home">
+                <img class="nav-edu-logo" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />EduApp
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#home">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="#doubts">Doubts</a>
+                    <a class="nav-link" onclick="display('sectionLogin')" href="#sectionLogin">Log In</a>
+                    <a class="nav-link" onclick="display('sectionSignup')" href="#sectionSignup">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+        <div id="home" class="container top-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column justify-content-center welcome-card text-center">
+                        <div>
+                            <img class="eduapp-logo" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727545314/EduApp_whiten_sxmkih.jpg" />
+                            <h1 class="text-white txt-edu-head">
+                                Welcome to EduApp
+                            </h1>
+                            <p class="text-white txt-edu-paragraph">
+                                Empowering Learning, Anytime and Anywhere
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 id="courses" class="mt-5 text-center txt-cource-head mb-3">Popular Courses</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="courses-card-images" src="https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg" />
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">Full Stack Web Development</h5>
+                                <p class="txt">Duration: 12 weeks</p>
+                                <h5 class="text-danger txt-PaidOrFree">Paid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="courses-card-images" src="https://automationedge.com/wp-content/uploads/2021/07/imgpsh_fullsize_anim-28.jpg" />
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">Introduction to AI & ML</h5>
+                                <p class="txt">Duration: 6 weeks</p>
+                                <h5 class="text-success txt-PaidOrFree">Free</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <img class="courses-card-images" src="https://www.pickl.ai/backend/uploads/images/1691395362.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">Data Science Bootcamp</h5>
+                                <p class="txt">Duration: 18 weeks</p>
+                                <h5 class="text-danger txt-PaidOrFree">Paid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <img class="courses-card-images" src="https://asset.workerman.com/IT0101PL//media/post/thumb/1703764381.webp" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">UI/UX Design Fundamentals</h5>
+                                <p class="txt">Duration: 8 weeks</p>
+                                <h5 class="text-success txt-PaidOrFree">Free</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <img class="courses-card-images" src="https://infycletechnologies.com/wp-content/uploads/2023/07/Python-Data-Science.webp" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">Python for Data Science</h5>
+                                <p class="txt">Duration: 2 weeks</p>
+                                <h5 class="text-danger txt-PaidOrFree">Paid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <img class="courses-card-images" src="https://storage.googleapis.com/lnd-web-cms-temp/application::marketplace-item.marketplace-item/d04393ac2e804eb382d2d7071062c73e.jpeg" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">Microsoft Excel Zero to Hero</h5>
+                                <p class="txt">Duration: 4 weeks</p>
+                                <h5 class="text-success txt-PaidOrFree">Free</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="container d-flex flex-row justify-content-center courses-card  mb-4 text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <img class="courses-card-images" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727594046/1712663892933_ktar7w.png" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="txt-cources">AWS Cloud Computing</h5>
+                                <p class="txt">Duration: 18 weeks</p>
+                                <h5 class="text-danger txt-PaidOrFree">Paid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <img class="bottom-logo-image" src="https://res.cloudinary.com/dc9hrxhd8/image/upload/v1727591749/EduApp_Landscape2_rutrrj.jpg" />
+            </div>
+            <div>
+                <h3 id="doubts" class="txt-doubts text-center">
+                    Have Doubts? Ask Us!
+                </h3>
+                <p class="text-center txt-doubts">
+                    We are here to resolve any doubts you may have about our courses.
+                </p>
+                <div>
+                    <div class="ml-auto mr-auto form-container text-center">
+                        <input class="username-box txt" type="text" placeholder="Enter your doubt">
+                        <button class="txt btn btn-success btn-colour" onclick="showDoubtMessage()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section text-white text-center bg-dark">
+            <p class="txt">&copy; 2024 EduApp. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+    <script>
+        function showLoginMessage() {
+            alert("Please Login first.");
+        }
+
+        function showSignupMessage() {
+            alert("Please Signup first");
+        }
+
+        function showDoubtMessage() {
+            alert("Your doubt is submitted successfully");
+        }
+    </script>
+</body>
+
+</html>

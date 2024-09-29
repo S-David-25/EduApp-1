@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-bg {
+    height: 100vh;
+    background-color: #cedcf2;
+}
+
+.btn-colour {
+    background-color: #c72a42;
+    color: #ffffff;
+    height: 36px;
+    border-width: 0px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+.eduapp-logo-login {
+    width: 70%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+.login-head {
+    font-family: "Bree Serif";
+}
+
+.nav-edu-logo {
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.background-colour {
+    background-color: #cedcf2;
+}
+
+.top-container {
+    padding: 20px;
+}
+
+.txt-edu-head {
+    font-family: "Bree Serif";
+}
+
+.txt-edu-paragraph {
+    font-family: "Caveat";
+    font-size: 20px;
+}
+
+.txt-cource-head {
+    font-family: "Playfair Display SC";
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.txt-cources {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.txt-PaidOrFree {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.txt-doubts {
+    font-family: "Bree";
+}
+
+.logo-bg {
+    background-color: #eac7f2;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.welcome-card {
+    margin: 20px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    padding: 15px;
+    height: 380px;
+    width: 90%;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c72a42;
+}
+
+.login-container {
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100%;
+    width: 320px;
+    border-radius: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c72a42;
+}
+
+.username-box {
+    margin: 7px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c72a42;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.courses-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c72a42;
+}
+
+.eduapp-logo {
+    height: 160px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    height: 100%;
+    width: 92%;
+    border-style: solid;
+    border-color: #c72a42;
+    border-width: 1px;
+    text-align: center;
+}
+
+.courses-card-images {
+    height: 270px;
+    width: 100%;
+    margin-right: 14px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.bottom-section {
+    padding: 10px;
+}
+
+.txt {
+    font-family: "Roboto";
+}
+
+.bottom-logo-image {
+    width: 85%;
+    margin: 15px;
+    border-radius: 12px;
+}
